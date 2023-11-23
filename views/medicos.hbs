@@ -1,0 +1,31 @@
+<header>
+    Listado de medicos
+</header><br>
+    <table border="solid">
+        <thead>
+            <tr>
+                <th>Nombres</th>
+                <th>Apellidos</th>
+                <th>Numero de cedula</th>
+                <th>Consultorio</th>
+                <th>Telefono</th>
+                <th>Correo</th>
+                <th>Especialidad</th>
+                <th>Paciente</th>
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla-medicos">
+            {{#each resultado}}
+            <tr>
+                <td>{{nombres}}</td>
+                <td>{{apellidos}}</td>
+                <td>{{cedula}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{telefono}}</td>
+                <td>{{correo}}</td>
+                <td>{{especialidad}}</td>    
+            </tr>
+            {{/each}}
+        </tbody>
+    </table><br><br>
+    <center> <a href="../index.html"><input type="button" value="Volver" id="Volver"></a></center>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Registro medicos</title>
+</head>
+<body>
+    <header>
+        <h1>Registro Medicos</h1>
+    </header>
+    <section>
+        <div class="container-form">
+        <form method=post action="/agregar-medico">
+            <label for="nombres">Nombres</label>
+            <input type="text" id="nombres" name="nombres" required><br><br>
+            <label for="apellidos">Apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+            <label for="cedula">Numero de Cedula</label>
+            <input type="number" id="cedula" name="cedula" required><br><br>
+            <label for="consultorio">Numero de Consultorio</label>
+            <input type="number" id="consultorio" name="consultorio" required><br><br>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" required><br><br>
+            <label for="correo">Correo electronico</label>
+            <input type="email" id="correo" name="correo"><br><br>
+            <label for="">Especialidad requerida</label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="">----------Seleccione una opcion-----------</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select><br><br>
+            <input type="submit" value="Enviar" id="Enviar">
+        </form><br>
+        <center><a href="../index.html"><input type="button" value="Volver" id="Volver"></a></center>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>

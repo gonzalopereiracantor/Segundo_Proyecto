@@ -1,0 +1,30 @@
+<header>
+    Listado de citas
+</header><br>
+    <table border="solid">
+        <thead>
+            <tr>
+                <th>Fecha cita</th>
+                <th>Paciente</th>
+                <th>Telefono Paciente</th>
+                <th>Especialidad</th>
+                <th>Consultorio</th>
+                <th>Medico</th>
+                
+            </tr>
+        </thead>
+        <tbody id="cuerpo-tabla-medicos">
+            {{#each resultado}}
+            <tr>
+                <td>{{formatoFecha fecha_cita}}</td>
+                <td>{{nombres}} {{apellidos}}</td>
+                <td>{{telefono}}</td>
+                <td>{{especialidad}}</td>
+                <td>{{consultorio}}</td>
+                <td>{{nombresMedico}} {{apellidosMedico}}</td>
+                
+            </tr>
+            {{/each}}
+        </tbody>
+    </table><br><br>
+    <center> <a href="../index.html"><input type="button" value="Volver" id="Volver"></a></center>

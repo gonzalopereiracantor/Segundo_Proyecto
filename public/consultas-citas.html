@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <title>Consulta citas medicas</title>
+</head>
+<body>
+    <header>
+        <h1>Consulta citas medicas</h1>
+    </header>
+    <section>
+        <div class="container-form">
+        <form method=post action="/consulta-cita">
+            <label for="nombres"><font color="white">Especialidad</font></label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="">----------Seleccione una opcion-----------</option>
+                <option value="Medicina General">Medicina General</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Dermatología">Dermatología</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option>
+            </select><br><br>
+            <input type="submit" value="Consultar" id="Enviar">
+        </form><br>
+        <center><a href="../index.html"><input type="button" value="Volver" id="Volver"></a></center>
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
